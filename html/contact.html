@@ -3,8 +3,132 @@
   <head>
     <meta charset="utf-8">
     <title>Contact Us</title>
+    <style>
+      body {
+        font-family: -apple-system,sans-serif;
+        font-weight: lighter;
+        letter-spacing: 0.5px;
+        background-color: #343334;
+        overflow-y: auto;
+      }
+
+      nav {
+        display: flex;
+        justify-content: flex-start;
+        background-color: #EDAE49;
+        box-shadow: 0 7px 7px rgba(0, 0, 0, 0.3);
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 50px;
+        z-index: 300;
+      }
+
+      a {
+        font-size: 20px;
+        padding: 15px 15px 15px 15px;
+        color: #333232;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      a:hover {
+        background-color: #f1f1f1;
+        color: #000;
+      }
+
+      #title {
+        margin: 10%;
+        margin-bottom: 5%;
+        text-align: center;
+        font-weight: lighter;
+        letter-spacing: 13px;
+        font-family: 'Roboto', sans-serif;
+        color: #EFDAB9;
+        font-size: 50px;
+        text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+      }
+
+      form {
+        margin: 0 auto;
+        width: 525px;
+      }
+
+      .form-items {
+        border-style:solid;
+        border:none;
+        border-radius: 5px;
+        font-size: 15px;
+        padding-left: 10px;
+        margin-bottom: 10px;
+      }
+
+      #name-box {
+        height: 40px;
+        width: 500px;
+      }
+
+      #question-type {
+        height: 40px;
+        width: 510px;
+      }
+
+      textarea {
+        padding-top: 10px;
+        height: 200px;
+        width: 500px;
+      }
+
+      #submit {
+        background-color: #EDAE49;
+        font-size: 15px;
+        padding: 10px;
+        color: #000;
+        border-radius: 6px;
+        border: 0;
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        margin-bottom: 30%;
+      }
+
+      button:hover {
+        background-color: #FFA500;
+      }
+
+      footer h1 {
+        font-weight: lighter;
+        text-align: center;
+        font-size: 15px;
+        color: gray;
+        padding: 10px;
+      }
+    </style>
   </head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Playfair+Display&display=swap" rel="stylesheet">
   <body>
-    <h1>Contact us</h1>
+    <h1 id="title">CONTACT US</h1>
+    <header>
+      <nav>
+          <a class="button" href="index.html">Home</a>
+          <a class="button" href="html/contact.html">Contact</a>
+          <a class="button" href="html/services.html">Services</a>
+      </nav>
+    </header>
+    <form action="" method="get">
+      <input placeholder="Email address" type="text" name="name" class="form-items" id="name-box">
+      <select class="form-items" id="question-type">
+        <option selected disabled>What is this about?</option>
+        <option value="1">Send a feedback</option>
+        <option value="2">Have a question</option>
+        <option value="3">Request special services</option>
+        <option value="4">Others</option>
+      </select>
+      <textarea placeholder="Send us a message" class="form-items" rows="8" cols="40"></textarea>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+    <footer>
+      <h1>Powered by Linh Tran! Inspired by Atom.io</h1>
+    </footer>
   </body>
 </html>
