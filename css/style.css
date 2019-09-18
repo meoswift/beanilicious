@@ -2,8 +2,10 @@ body {
   font-family: -apple-system,sans-serif;
   font-weight: lighter;
   letter-spacing: 0.5px;
-  background-color: #343334;
+  background-color: #DCD0C0;
+  background-repeat: repeat-x;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .welcome {
@@ -18,40 +20,40 @@ body {
 
 .welcome h1 {
   letter-spacing: 13px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Playfair Display', sans-serif;
   font-weight: lighter;
   margin-top: 6%;
   padding: 2%;
   text-align: center;
-  color: #EFDAB9;
+  color: #373737;
   font-size: 50px;
-  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 nav {
   display: flex;
-  justify-content: flex-start;
-  background-color: #EDAE49;
+  justify-content: center;
+  font-family: 'Playfair Display', sans-serif;
+  background-color: #f4f4f4;
   box-shadow: 0 7px 7px rgba(0, 0, 0, 0.3);
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
-  height: 50px;
+  height: 60px;
   z-index: 300;
 }
 
 a {
   font-size: 20px;
   padding: 15px 15px 15px 15px;
-  color: #333232;
+  color: #373737;
   text-decoration: none;
   cursor: pointer;
 }
 
 a:hover {
-  background-color: #f1f1f1;
-  color: #000;
+  font-style: italic;
+  text-decoration: underline;
 }
 
 .image-container {
@@ -66,32 +68,14 @@ a:hover {
   height: 400px;
   margin: 15px;
   border-radius: 10px;
-  box-shadow: 0 7px 7px rgba(0, 0, 0, 0.5);
-}
-
-.goals {
-  display: flex;
-  margin: 10% 0;
-  margin-left: 12%;
-  text-align: left;
-  color: #EFDAB9;
-  right: 0;
-}
-
-#right-img {
-  border-radius: 10px;
-  width: 750px;
-  height: 450px;
-  margin-right: -3%;
-  margin-left: 5%;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 7px 7px rgba(0, 0, 0, 0.3);
 }
 
 .introduction {
   display: flex;
   margin: 10% 0;
   text-align: left;
-  color: #EFDAB9;
+  color: #373737;
   right: 0;
 }
 
@@ -104,6 +88,24 @@ a:hover {
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 }
 
+.goals {
+  display: flex;
+  margin: 10% 0;
+  margin-left: 12%;
+  text-align: left;
+  color: #373737;
+  right: 0;
+}
+
+#right-img {
+  border-radius: 10px;
+  width: 750px;
+  height: 450px;
+  margin-right: -3%;
+  margin-left: 5%;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
 .detail {
   box-sizing: border-box;
   width: 520px;
@@ -112,42 +114,47 @@ a:hover {
 }
 
 .title {
+  letter-spacing: 1px;
+  font-family: 'Playfair Display', sans-serif;
   font-size: 35px;
 }
 
 button {
-  background-color: #EDAE49;
+  background-color: #373737;
+  color: #f4f4f4;
   font-size: 15px;
   padding: 10px;
-  color: #000;
   border-radius: 6px;
   border: 0;
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #FFA500;
+  border: 1px solid #373737;
+  background-color: #f4f4f4;
+  color: #373737;
 }
 
 #service-title {
+  font-family: 'Playfair Display', sans-serif;
+  letter-spacing: 1px;
   text-align: left;
   margin-left: 17%;
-  color: #EFDAB9;
+  color: #373737;
   font-size: 50px;
 }
 
 .services {
   display: flex;
-  flex-direction: row;
-  margin-left: 20%;
-  margin-bottom: 10%;
+  align-items: center;
+  justify-content: center;
+  margin: 0% 15% 10% 15%;
 }
 
 .services h1 {
   font-weight: lighter;
   font-size: 25px;
-  color: #EFDAB9;
+  color: #373737;
   cursor: pointer;
 }
 
@@ -157,11 +164,12 @@ button:hover {
 
 .services p {
   font-size: 15px;
-  color: #EDAE49;
+  color: #373737;
 }
 
 .col1 {
   width: 35%;
+  padding-top: 5px;
 }
 
 .col2 {

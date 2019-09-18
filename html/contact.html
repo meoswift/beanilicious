@@ -8,34 +8,37 @@
         font-family: -apple-system,sans-serif;
         font-weight: lighter;
         letter-spacing: 0.5px;
-        background-color: #343334;
+        background-color: #DCD0C0;
+        background-repeat: repeat-x;
         overflow-y: auto;
+        overflow-x: hidden;
       }
 
       nav {
         display: flex;
-        justify-content: flex-start;
-        background-color: #EDAE49;
+        justify-content: center;
+        font-family: 'Playfair Display', sans-serif;
+        background-color: #f4f4f4;
         box-shadow: 0 7px 7px rgba(0, 0, 0, 0.3);
         position: fixed;
         top: 0;
         right: 0;
         left: 0;
-        height: 50px;
+        height: 60px;
         z-index: 300;
       }
 
       a {
         font-size: 20px;
         padding: 15px 15px 15px 15px;
-        color: #333232;
+        color: #373737;
         text-decoration: none;
         cursor: pointer;
       }
 
       a:hover {
-        background-color: #f1f1f1;
-        color: #000;
+        font-style: italic;
+        text-decoration: underline;
       }
 
       #title {
@@ -43,11 +46,10 @@
         margin-bottom: 5%;
         text-align: center;
         font-weight: lighter;
-        letter-spacing: 13px;
-        font-family: 'Roboto', sans-serif;
-        color: #EFDAB9;
+        letter-spacing: 10px;
+        font-family: 'Playfair Display', sans-serif;
+        color: #373737;
         font-size: 50px;
-        text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
       }
 
       form {
@@ -81,18 +83,17 @@
       }
 
       #submit {
-        background-color: #EDAE49;
+        background-color: #373737;
+        color: #f4f4f4;
         font-size: 15px;
         padding: 10px;
-        color: #000;
         border-radius: 6px;
         border: 0;
-        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
         cursor: pointer;
         margin-bottom: 30%;
       }
 
-      #submit:hover {
+      button:hover {
         background-color: #FFA500;
       }
 
@@ -104,16 +105,15 @@
         padding: 10px;
       }
     </style>
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Playfair+Display&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="https://sgcisanfrancisco.org/images/coffee-bean-clipart-white-11.png">
   </head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Playfair+Display&display=swap" rel="stylesheet">
   <body>
     <h1 id="title">CONTACT US</h1>
     <header>
       <nav>
-          <a class="button" href="../index.html">Home</a>
-          <a class="button" href="contact.html">Contact</a>
-          <a class="button" href="services.html">Services</a>
+          <a class="button" href="../index.html">HOME</a>
+          <a class="button" href="contact.html">CONTACT</a>
+          <a class="button" href="services.html">SERVICES</a>
       </nav>
     </header>
     <form action="" method="get">
@@ -129,7 +129,7 @@
       <button type="submit" id="submit">Submit</button>
     </form>
     <footer>
-      <h1>Powered by Linh Tran! Inspired by Atom.io</h1>
+      <h1>Powered by Linh Tran :D</h1>
     </footer>
   </body>
 </html>
