@@ -185,3 +185,94 @@ footer h1 {
   color: gray;
   padding: 10px;
 }
+
+@media (max-width:500px) {
+  html,body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .welcome h1 {
+    margin-top: 20%;
+    letter-spacing: 7px;
+    font-size: 30px;
+    padding: 0;
+  }
+
+
+  .image-container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .image-container img {
+    width: 100px;
+    height: 150px;
+    margin: 5px;
+  }
+
+  .introduction {
+    display: inline-block;
+    margin: 13px;
+    text-align: left;
+  }
+
+  #left-img {
+    margin: 0;
+    width: 350px;
+    height: 230px;
+  }
+
+  .goals {
+    display: inline-block;
+    margin: 13px;
+    text-align: center;
+  }
+
+  #right-img {
+    display: none;
+  }
+
+  .detail {
+    width: 300px;
+    margin: 0;
+    margin-left: 10px;
+    text-align: left;
+  }
+
+  #service-title {
+    font-size: 40px;
+    text-align: center;
+    margin: 10% 0 0 0;
+  }
+
+  .services {
+    display: inline-block;
+    margin: 0 15% 15% 15%;
+  }
+
+  .services h1 {
+    font-weight: normal;
+    font-size: 25px;
+    color: #373737;
+    cursor: pointer;
+  }
+
+  .services h1:hover {
+    text-decoration: underline;
+  }
+
+  .services p {
+    font-size: 15px;
+    color: #373737;
+  }
+
+  .col1 {
+    width: 100%;
+    padding-top: 0px;
+  }
+
+  .col2 {
+    margin-left: 0;
+    width: 100%;
+}
